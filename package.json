@@ -1,0 +1,16 @@
+{
+  "name": "partydiscord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Skye Viau <skye.viau@protonmail.com> (Kizzaris)",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "discord.js": "^11.2.1",
+    "rimraf": "^2.6.2"
+  }
+}

@@ -4,6 +4,7 @@ const fs = require('fs');
 const http = require('http');
 const AdmZip = require('adm-zip');
 const rimraf = require('rimraf');
+const moment = require('moment');
 
 const client = new Discord.Client();
 
@@ -17,7 +18,7 @@ const helpEmbed = {
   "title": "About & Commands",
   "description": "Created by [Kizzaris](http://www.skyenet.ga) to ease upload of the [Cult of the Party Parrot](http://cultofthepartyparrot.com/) emojis.",
   "color": 2456945,
-  "timestamp": "2018-01-01T06:39:10.973Z",
+  "timestamp": moment().format(),
   "footer": {
     "icon_url": "http://cultofthepartyparrot.com/parrots/parrot.gif",
     "text": "Mr.Parrot (partydiscord)"

@@ -100,7 +100,9 @@ client.on("message", (message) => {
   } else if (message.content === '+help') {
     message.channel.send({ embed: helpEmbed });
   } else if (message.content === '+leave') {
-    leaveServer(message);
+    if (message.channel.type === 'text') {
+      leaveServer(message);
+    }
   } else if (message.content === '+stats') {
     message.channel.send(`${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
   }
